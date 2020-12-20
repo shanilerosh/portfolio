@@ -205,6 +205,16 @@ img {
   margin: 4rem 0;
 }
 
+/* cols  */
+
+.txt-primary {
+  color: var(--primary-col);
+}
+
+.txt-dark {
+  color: var(--dark-col);
+}
+
 /* Background btns */
 
 .bg-primary,
@@ -272,6 +282,10 @@ img {
   position: relative;
 }
 
+.showcase-text {
+  animation: slideInFrmLeft 1s ease-in;
+}
+
 .showcase p {
   margin: 20px 0;
 }
@@ -300,6 +314,7 @@ img {
   padding: 40px;
   z-index: 100;
   justify-self: flex-end;
+  animation: slideInFrmRight 1s ease-in;
 }
 
 .showcase-form .form-control {
@@ -328,6 +343,7 @@ img {
 
 .stats {
   padding-top: 100px;
+  animation: slideInFrmBtm 1s ease-in;
 }
 
 .stats-heading {
@@ -498,4 +514,42 @@ img {
      .navbar ul li{
         padding: 10px;
      } */
+}
+
+/* Animations */
+
+@keyframes slideInFrmLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFrmRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFrmTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFrmBtm {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
