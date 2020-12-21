@@ -1,27 +1,29 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shanil Erosh | Web Development</title>
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="	https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">    
-
+    <link rel="stylesheet" href="	https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
 </head>
+
 <body>
     <!-- Navbar -->
     <div class="navbar">
         <div class="container flex">
             <h1 class="logo">Shanil Erosh</h1>
-                <button class="hamburger" id="hamburger"">
-                    <i class="fas fa-bars"></i>
-                </button>  
+            <button class="hamburger" id="hamburger"">
+                    <i class=" fas fa-bars"></i>
+            </button>
             <nav id="list">
                 <ul>
-                    <li><a href="index.html">Skills</a></li>
-                    <li><a href="index.html">Contact</a></li>
-                    <li><a href="index.html">About Me</a></li>
-                    <li><a href="index.html">Projects</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#aboutMe">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,18 +38,18 @@
                 <p class="btn btn-outline">Curriculum Vitae</p>
             </div>
             <div class="showcase-form card" id="showcase-form">
-                <h2>Contact Me</h2>
+                <h2 id="contact-txt">Contact Me</h2>
                 <form>
                     <div class="form-control">
-                        <input type="text" name="Name" placeholder="Name">
+                        <input type="text" name="Name" placeholder="Name" id="name" required>
                     </div>
                     <div class="form-control">
                     </div>
-                        <input type="text" name="Contact Number" placeholder="Contact Number">
+                    <input type="text" name="Contact Number" placeholder="Contact Number" id="contact"required>
                     <div class="form-control">
-                        <input type="email" name="Email" placeholder="Email">
+                        <input type="email" name="Email" placeholder="Email" id="email" required>
                     </div>
-                    <input type="submit" class="btn btn-primary">
+                    <input type="submit" class="btn btn-primary" name="submit">
                 </form>
             </div>
         </div>
@@ -56,25 +58,25 @@
     <!-- Stats -->
     <section class="stats">
         <div class="container">
-         <h3 class="stats-heading text-center my-1">
-            Before deep diving into my projects,followings are my stats regaring my implementations.I love working with different technologies. So whatever new technology i have to work with i always take it as a challenge that helps me improve 🗜</h3>
-        <div class="grid grid-3 text-center my-4">
-            <div>
-                <i class="fas fa-server fa-3x"></i>
-                <h3>Web Apps</h3>
-                <p class="text-secondary">4 proects</p>
+            <h3 class="stats-heading text-center my-1">
+                Before deep diving into my projects,followings are my stats regaring my implementations.I love working with different technologies. So whatever new technology i have to work with i always take it as a challenge that helps me improve 🗜</h3>
+            <div class="grid grid-3 text-center my-4">
+                <div>
+                    <i class="fas fa-server fa-3x"></i>
+                    <h3>Web Apps</h3>
+                    <p class="text-secondary">4 proects</p>
+                </div>
+                <div>
+                    <i class="fas fa-mobile fa-3x"></i>
+                    <h3>Mobile Apps</h3>
+                    <p class="text-secondary">3 projects</p>
+                </div>
+                <div>
+                    <i class="fas fa fa-laptop fa-3x"></i>
+                    <h3>Desktop Apps</h3>
+                    <p class="text-secondary">3 projects</p>
+                </div>
             </div>
-            <div>
-                <i class="fas fa-mobile fa-3x"></i>
-                <h3>Mobile Apps</h3>
-                <p class="text-secondary">3 projects</p>
-            </div>
-            <div>
-                <i class="fas fa fa-laptop fa-3x"></i>
-                <h3>Desktop Apps</h3>
-                <p class="text-secondary">3 projects</p>
-            </div>
-        </div>
         </div>
     </section>
 
@@ -92,12 +94,12 @@
 
 
     <!-- About -->
-    <section class="about bg-light py-3">
+    <section class="about bg-light py-3" id="aboutMe">
         <div class="container grid">
             <div>
                 <h1 class="xl">About Me</h1>
                 <p class="lead">
-                So, who am I?  (I mean, who is anyone, really?  That’s a pretty existential question for a simple “About Me” section, don’t you think?)  Okay, back to the question at hand.Hey there, I am Shanil Miranda. I study at IJSE (Institute of Java and Software Engineering). I love to code. I want to learn and improve at the same time.If you want to build up an innovative application either for your personal use or for your business i guerent you i'll make your dream come true.What does this all mean?  It means if we’re lucky enough to work together on your next project, it will be an absolute masterpiece – without a doubt, my best work to date. (Just sayin’. 😊)
+                    So, who am I? (I mean, who is anyone, really? That’s a pretty existential question for a simple “About Me” section, don’t you think?) Okay, back to the question at hand.Hey there, I am Shanil Miranda. I study at IJSE (Institute of Java and Software Engineering). I love to code. I want to learn and improve at the same time.If you want to build up an innovative application either for your personal use or for your business i guerent you i'll make your dream come true.What does this all mean? It means if we’re lucky enough to work together on your next project, it will be an absolute masterpiece – without a doubt, my best work to date. (Just sayin’. 😊)
                 </p>
             </div>
             <div class="img-container">
@@ -107,7 +109,7 @@
     </section>
 
     <!-- Languages -->
-    <section class="languages">
+    <section class="languages" id="skills">
         <h2 class="class text-center my-2">
             Technologies i love to work with
         </h2>
@@ -162,7 +164,7 @@
             <div>
                 <h1 class="xl">Further More</h1>
                 <p class="lead">
-                    I believe in constantly developing my skills.  I believe in overdelivering expectations.  I believe high quality applications can be used to improve profits and I believe that gorgeous UI UX experiences belongs in the fanciest museums next to the Van Gogh and Monet paintings.  I believe that we are never, ever, ever, ever, EVER done learning and growing.
+                    I believe in constantly developing my skills. I believe in overdelivering expectations. I believe high quality applications can be used to improve profits and I believe that gorgeous UI UX experiences belongs in the fanciest museums next to the Van Gogh and Monet paintings. I believe that we are never, ever, ever, ever, EVER done learning and growing.
                 </p>
                 <a href="#showcase-form" class="btn btn-dark">Contact Me</a>
             </div>
@@ -170,14 +172,14 @@
         </div>
     </section>
 
-    <!-- Main Grid -->
-    <section class="features-main my-2">
+    <!-- Projects -->
+    <section class="features-main my-2" id="projects">
         <h1 class="xl container">My Projects</h1>
         <div class="container grid grid-3">
             <div class="card flex">
                 <i class="fas fa fa-laptop fa-3x"></i>
                 <div>
-                    <h2>Car Maangement System</h2>
+                    <h2>Car Mangement System</h2>
                     <p class="my-2">This Car Service management System was developed based on the requirements of the R4 Enterprises private Limited.I designed and developed this application to manage all the internal processors,activities of the business.Through this system business is capable of managing orders,customers,supplier,items.And also generating reports,managing customer and supplier retruns.In order to manage the payable and receivable balances debit and credit note generation also have been allowed.
                     </p>
                     <!-- <hr class="my-3 txt-dark"/> -->
@@ -187,7 +189,7 @@
                     <h5 class="my-1"><span class="txt-primary">My Role - </span>Total Contribution</h5>
                     <h5 class="my-1"><span class="txt-primary">Duration - </span>One Month</h5>
                     <h5 class="my-1"><span class="txt-primary">Check it Out - </span>https://github.com/shanilerosh/CarServiceStationProject.git</h5>
-                    
+
                 </div>
             </div>
         </div>
@@ -205,16 +207,16 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="features.html">Feature</a></li>
-                    <li><a href="docs.html">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about">About</a></li>
                 </ul>
             </nav>
             <div class="social">
-                <a href="">
+                <a href="https://github.com/shanilerosh">
                     <i class="fab fa-github fa-2x"></i>
                 </a>
-                <a href="">
-                    <i class="fab fa-facebook fa-2x"></i>
+                <a href="https://www.linkedin.com/in/shanil-miranda-a6179a1ab/">
+                    <i class="fab fa-linkedin fa-2x"></i>
                 </a>
                 <a href="">
                     <i class="fab fa-twitter fa-2x"></i>
@@ -222,7 +224,9 @@
             </div>
         </div>
     </footer>
-<script src="script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
-</html>
 
+</html>
