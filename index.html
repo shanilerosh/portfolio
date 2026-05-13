@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shanil Erosh Miranda | Associate Lead Engineer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Particle canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>S<span class="logo-dot">.</span>M<span class="logo-bracket"> /&gt;</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1 class="hero-title animate-in">
+        <span class="hero-greeting">Hello, I'm</span>
+        <span class="hero-name">Shanil Erosh<br>Miranda</span>
+      </h1>
+      <div class="hero-role animate-in">
+        <span class="role-prefix">// </span>
+        <span id="typingText" class="typing-text"></span>
+        <span class="typing-cursor">|</span>
+      </div>
+      <p class="hero-description animate-in">
+        Associate Lead Engineer with 6+ years of experience crafting scalable, high-performance
+        applications across the full stack. Passionate about clean architecture,
+        team leadership, and turning complex problems into elegant solutions.
+      </p>
+      <div class="hero-cta animate-in">
+        <a href="#projects" class="btn btn-primary">
+          <span>View My Work</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17l9.2-9.2M17 17V7H7"/>
+          </svg>
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <span>Get In Touch</span>
+        </a>
+      </div>
+      <div class="hero-stats animate-in">
+        <div class="stat">
+          <span class="stat-number" data-count="6">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-count="7">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-count="15">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Technologies</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual animate-in">
+      <div class="profile-photo-wrapper">
+        <div class="profile-photo-ring"></div>
+        <img src="photo.png" alt="Shanil Erosh Miranda" class="profile-photo">
+        <div class="profile-photo-dots">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">&lt;about&gt;</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a passionate software engineer and technology leader with over 6 years of experience
+            in designing, developing, and delivering enterprise-grade applications. Currently serving as an
+            <strong>Associate Lead Engineer</strong> at Altrium, I bridge the gap between technical execution and strategic vision.
+          </p>
+          <p>
+            My journey spans from writing low-level systems in C++ to architecting cloud-native
+            microservices on AWS. I thrive in environments where I can mentor teams, establish
+            best practices, and drive innovation through modern engineering principles.
+          </p>
+          <p>
+            When I'm not coding, you'll find me exploring new technologies, contributing to tech
+            communities, and continuously pushing the boundaries of what's possible with software.
+          </p>
+        </div>
+        <div class="about-details reveal">
+          <div class="code-window">
+            <div class="code-header">
+              <div class="code-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="code-title">shanil.config.ts</span>
+            </div>
+            <pre class="code-body"><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"Shanil Erosh Miranda"</span>,
+  <span class="code-prop">role</span>: <span class="code-string">"Associate Lead Engineer"</span>,
+  <span class="code-prop">experience</span>: <span class="code-string">"6+ years"</span>,
+  <span class="code-prop">passion</span>: <span class="code-string">"Building scalable systems"</span>,
+  <span class="code-prop">stack</span>: [
+    <span class="code-string">"Java"</span>, <span class="code-string">"Spring"</span>, <span class="code-string">"React"</span>,
+    <span class="code-string">"Node.js"</span>, <span class="code-string">"Python"</span>, <span class="code-string">"AWS"</span>,
+    <span class="code-string">"Go"</span>, <span class="code-string">"C#"</span>, <span class="code-string">"Docker"</span>
+  ],
+  <span class="code-prop">motto</span>: <span class="code-string">"Code with purpose."</span>
+};</code></pre>
+          </div>
+          <div class="about-cards">
+            <div class="detail-card">
+              <div class="detail-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 7L12 3L4 7M20 7L12 11M20 7V17L12 21M12 11L4 7M12 11V21M4 7V17L12 21"/>
+                </svg>
+              </div>
+              <h3>Full-Stack Architecture</h3>
+              <p>End-to-end system design from databases to frontend interfaces</p>
+            </div>
+            <div class="detail-card">
+              <div class="detail-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <h3>Team Leadership</h3>
+              <p>Mentoring developers and driving agile engineering culture</p>
+            </div>
+            <div class="detail-card">
+              <div class="detail-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+              </div>
+              <h3>Cloud & DevOps</h3>
+              <p>CI/CD pipelines, containerization, and cloud infrastructure on AWS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">&lt;skills&gt;</span>
+        <h2 class="section-title">Tech Stack</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <h3 class="category-title">
+            <span class="category-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </span>
+            Backend
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="expert">Java</span>
+            <span class="skill-tag" data-level="expert">Spring Boot</span>
+            <span class="skill-tag" data-level="advanced">Python</span>
+            <span class="skill-tag" data-level="advanced">Go</span>
+            <span class="skill-tag" data-level="advanced">C#</span>
+            <span class="skill-tag" data-level="advanced">.NET</span>
+            <span class="skill-tag" data-level="intermediate">C++</span>
+            <span class="skill-tag" data-level="expert">Node.js</span>
+            <span class="skill-tag" data-level="advanced">Express.js</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="category-title">
+            <span class="category-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </span>
+            Frontend
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="expert">React</span>
+            <span class="skill-tag" data-level="expert">Angular</span>
+            <span class="skill-tag" data-level="expert">JavaScript</span>
+            <span class="skill-tag" data-level="expert">TypeScript</span>
+            <span class="skill-tag" data-level="advanced">HTML5</span>
+            <span class="skill-tag" data-level="advanced">CSS3 / SASS</span>
+            <span class="skill-tag" data-level="advanced">Next.js</span>
+            <span class="skill-tag" data-level="advanced">WordPress</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="category-title">
+            <span class="category-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+              </svg>
+            </span>
+            Database
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="expert">MongoDB</span>
+            <span class="skill-tag" data-level="expert">PostgreSQL</span>
+            <span class="skill-tag" data-level="advanced">MySQL</span>
+            <span class="skill-tag" data-level="advanced">Redis</span>
+            <span class="skill-tag" data-level="intermediate">DynamoDB</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="category-title">
+            <span class="category-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </span>
+            DevOps & Cloud
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="expert">AWS</span>
+            <span class="skill-tag" data-level="advanced">Docker</span>
+            <span class="skill-tag" data-level="advanced">Kubernetes</span>
+            <span class="skill-tag" data-level="expert">CI/CD</span>
+            <span class="skill-tag" data-level="advanced">Jenkins</span>
+            <span class="skill-tag" data-level="advanced">GitHub Actions</span>
+            <span class="skill-tag" data-level="intermediate">Terraform</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">&lt;experience&gt;</span>
+        <h2 class="section-title">Career Journey</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-date">Dec 2025 - Present</div>
+            <h3 class="timeline-title">Associate Lead Engineer</h3>
+            <p class="timeline-company">Altrium</p>
+            <p class="timeline-desc">
+              Leading a cross-functional engineering team in delivering enterprise solutions.
+              Architecting microservices, driving technical decisions, conducting code reviews,
+              and mentoring junior developers. Establishing CI/CD best practices and cloud
+              infrastructure on AWS.
+            </p>
+            <div class="timeline-tags">
+              <span>Java</span><span>Spring Boot</span><span>React</span><span>AWS</span><span>Microservices</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-date">Jan 2024 - Present</div>
+            <h3 class="timeline-title">Senior Software Engineer</h3>
+            <p class="timeline-company">Altrium</p>
+            <p class="timeline-desc">
+              Designed and implemented scalable full-stack applications using MERN and MEAN stacks.
+              Led migration of legacy monoliths to microservices architecture. Improved system
+              performance through optimization and caching strategies.
+            </p>
+            <div class="timeline-tags">
+              <span>Node.js</span><span>Angular</span><span>MongoDB</span><span>Docker</span><span>Python</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-date">Dec 2022 - Jan 2024</div>
+            <h3 class="timeline-title">Software Engineer</h3>
+            <p class="timeline-company">Altrium</p>
+            <p class="timeline-desc">
+              Built RESTful APIs and web applications across multiple technology stacks.
+              Collaborated with product teams to translate business requirements into technical
+              solutions. Introduced automated testing practices and best engineering practices.
+            </p>
+            <div class="timeline-tags">
+              <span>Java</span><span>Spring Boot</span><span>React</span><span>PostgreSQL</span><span>CI/CD</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-date">Jul 2021 - Dec 2022</div>
+            <h3 class="timeline-title">Associate Software Engineer</h3>
+            <p class="timeline-company">M I Synergy (Pvt) Ltd</p>
+            <p class="timeline-desc">
+              Developed enterprise applications using Spring Boot and Camunda BPM.
+              Worked on full-stack features, API integrations, and contributed to
+              the core product development lifecycle in Colombo, Sri Lanka.
+            </p>
+            <div class="timeline-tags">
+              <span>Spring Boot</span><span>Camunda BPM</span><span>Java</span><span>React</span><span>MySQL</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-date">Jan 2021 - Jun 2021</div>
+            <h3 class="timeline-title">Software Intern</h3>
+            <p class="timeline-company">M I Synergy (Pvt) Ltd</p>
+            <p class="timeline-desc">
+              Started professional career as a software intern, gaining hands-on experience
+              in software development methodologies, coding best practices, and
+              contributing to real-world enterprise projects.
+            </p>
+            <div class="timeline-tags">
+              <span>Java</span><span>JavaScript</span><span>HTML/CSS</span><span>Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">&lt;projects&gt;</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+        <!-- Matrix Digital Solution -->
+        <div class="project-card featured reveal">
+          <div class="project-image">
+            <img src="images/matrix-digital.png" alt="Matrix Digital Solution" loading="lazy">
+          </div>
+          <div class="project-info">
+            <div class="project-type">WordPress</div>
+            <h3 class="project-title">Matrix Digital Solution</h3>
+            <p class="project-desc">
+              A digital agency website with a bold, modern design featuring custom animations,
+              service showcases, and a dynamic hero section. Built with WordPress and
+              custom theme development.
+            </p>
+            <div class="project-stack">
+              <span>WordPress</span><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>CSS3</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Radius TelcoMaster -->
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="images/radius-telcomaster.png" alt="Radius TelcoMaster" loading="lazy">
+          </div>
+          <div class="project-info">
+            <div class="project-type">WordPress</div>
+            <h3 class="project-title">Radius TelcoMaster</h3>
+            <p class="project-desc">
+              An admin portal for a telecommunications platform with secure login,
+              user management, and dashboard functionality for Telecom Masters PVT. LTD.
+            </p>
+            <div class="project-stack">
+              <span>WordPress</span><span>PHP</span><span>REST API</span><span>MySQL</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Parcel Monkey -->
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="images/parcelmonkey.png" alt="Parcel Monkey" loading="lazy">
+          </div>
+          <div class="project-info">
+            <div class="project-type">Full Stack</div>
+            <h3 class="project-title">Parcel Monkey</h3>
+            <p class="project-desc">
+              A UK-based parcel delivery comparison platform allowing users to compare
+              courier quotes, book shipments, and track parcels across multiple carriers
+              with real-time pricing.
+            </p>
+            <div class="project-stack">
+              <span>React</span><span>Node.js</span><span>REST API</span><span>PostgreSQL</span><span>AWS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lumity -->
+        <div class="project-card featured reveal">
+          <div class="project-image">
+            <img src="images/lumity.png" alt="Lumity" loading="lazy">
+          </div>
+          <div class="project-info">
+            <div class="project-type">Full Stack</div>
+            <h3 class="project-title">Lumity</h3>
+            <p class="project-desc">
+              A digital employee benefits broker platform that handles benefits administration,
+              renewals, compliance, and employee support — all through one unified platform
+              and dedicated team.
+            </p>
+            <div class="project-stack">
+              <span>React</span><span>Java</span><span>Spring Boot</span><span>PostgreSQL</span><span>AWS</span><span>Docker</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PlanYear -->
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="images/planyear.png" alt="PlanYear AI" loading="lazy">
+          </div>
+          <div class="project-info">
+            <div class="project-type">AI / Full Stack</div>
+            <h3 class="project-title">PlanYear AI</h3>
+            <p class="project-desc">
+              An AI-powered platform for benefits consultants combining deep industry
+              knowledge with AI capabilities. Features the BEACON platform for
+              strategic guidance and client relationship management.
+            </p>
+            <div class="project-stack">
+              <span>React</span><span>Python</span><span>AI/ML</span><span>Node.js</span><span>AWS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hair Business -->
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="images/hairbusiness.png" alt="The Hair Business" loading="lazy">
+          </div>
+          <div class="project-info">
+            <div class="project-type">WordPress</div>
+            <h3 class="project-title">The Hair Business</h3>
+            <p class="project-desc">
+              A professional hair salon website based in Penarth featuring online booking,
+              gift cards, service showcases, and a welcoming brand experience serving
+              clients since 1992.
+            </p>
+            <div class="project-stack">
+              <span>WordPress</span><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>CSS3</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Laufen -->
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="images/laufen.png" alt="Laufen" loading="lazy">
+          </div>
+          <div class="project-info">
+            <div class="project-type">Full Stack</div>
+            <h3 class="project-title">Laufen</h3>
+            <p class="project-desc">
+              A premium Swiss brand website for bathroom ceramics and design products.
+              Features product catalogs, inspiration galleries, professional resources,
+              and an elegant minimalist UI.
+            </p>
+            <div class="project-stack">
+              <span>React</span><span>Node.js</span><span>Java</span><span>Spring Boot</span><span>AWS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">&lt;contact&gt;</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="contact-text">
+            I'm always open to discussing new projects, creative ideas, or opportunities
+            to be part of your vision. Feel free to reach out!
+          </p>
+          <div class="contact-links">
+            <a href="mailto:shanilmiranda24@gmail.com" class="contact-link">
+              <div class="contact-link-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">shanilmiranda24@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/shanil-erosh-miranda-a6179a1ab/" target="_blank" class="contact-link">
+              <div class="contact-link-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">Shanil Erosh Miranda</span>
+              </div>
+            </a>
+            <a href="https://github.com/shanilerosh" target="_blank" class="contact-link">
+              <div class="contact-link-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-value">github.com/shanilerosh</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" name="from_name" placeholder=" " required>
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="from_email" placeholder=" " required>
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Send Message</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <span class="footer-logo">
+          <span class="logo-bracket">&lt;</span>S<span class="logo-dot">.</span>M<span class="logo-bracket"> /&gt;</span>
+        </span>
+        <p>Designed & Built by Shanil Erosh Miranda</p>
+        <p class="footer-year">&copy; 2026. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
